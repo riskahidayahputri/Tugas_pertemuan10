@@ -8,7 +8,12 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="red">#D10000</color>
+    <color name="gold">#f5bf42</color>
     <color name="blue">#381DA5</color>
+    <color name="beige">#F5F5DC</color>
+    <color name="skyblue">#87ceeb</color>
+    <color name="peachpuff">#ffdab9</color>
+    <color name="salmon">#fa8072</color>
 
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>

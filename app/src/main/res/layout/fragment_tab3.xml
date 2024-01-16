@@ -1,0 +1,739 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:layout_marginLeft="30dp"
+        android:textStyle="bold"
+        android:text="Genre Horror"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+
+        />
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView"
+        android:paddingBottom="30dp"
+
+        >
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:rowCount="5"
+            android:columnCount="3"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_below="@id/scrollview"
+            android:layout_marginTop="10dp">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/satu"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_row="1"
+                android:layout_margin="10dp"
+                android:layout_column="0"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:src="@drawable/horor1"
+                        android:layout_gravity="center_horizontal" />
+                    <TextView
+                        android:padding="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="The Uncanny Counter"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:layout_gravity="center_horizontal"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:textAlignment="center"
+                        android:padding="3dp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@color/black"
+                        android:textColor="@color/white"
+                        android:text="Thriller, Fantasy, Mystery" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:padding="3dp"
+                        android:textAlignment="center"
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:textSize="10sp"
+                        android:background="@color/gold"
+                        android:textColor="@color/white"
+                        android:text="Tonton" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/dua"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_row="1"
+                android:layout_margin="10dp"
+                android:layout_column="1"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:src="@drawable/horor2"
+                        android:layout_gravity="center_horizontal" />
+                    <TextView
+                        android:padding="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Train To Busan"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:layout_gravity="center_horizontal"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:textAlignment="center"
+                        android:padding="3dp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@color/black"
+                        android:textColor="@color/white"
+                        android:text="Horror, Thriller, Zombie" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:padding="3dp"
+                        android:textAlignment="center"
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:textSize="10sp"
+                        android:background="@color/gold"
+                        android:textColor="@color/white"
+                        android:text="Tonton" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tiga"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_row="1"
+                android:layout_margin="10dp"
+                android:layout_column="2"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:src="@drawable/horor3"
+                        android:layout_gravity="center_horizontal" />
+                    <TextView
+                        android:padding="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="All Of Us Are Dead"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:layout_gravity="center_horizontal"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:textAlignment="center"
+                        android:padding="3dp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@color/black"
+                        android:textColor="@color/white"
+                        android:text="Thriller, Horro, zombie" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:padding="3dp"
+                        android:textAlignment="center"
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:textSize="10sp"
+                        android:background="@color/gold"
+                        android:textColor="@color/white"
+                        android:text="Tonton" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/empat"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_row="2"
+                android:layout_margin="10dp"
+                android:layout_column="0"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:src="@drawable/horor4"
+                        android:layout_gravity="center_horizontal" />
+                    <TextView
+                        android:padding="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mouse"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:layout_gravity="center_horizontal"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:textAlignment="center"
+                        android:padding="3dp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@color/black"
+                        android:textColor="@color/white"
+                        android:text="Thriller, Mystery, Crime" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:padding="3dp"
+                        android:textAlignment="center"
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:textSize="10sp"
+                        android:background="@color/gold"
+                        android:textColor="@color/white"
+                        android:text="Tonton" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/lima"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_row="2"
+                android:layout_margin="10dp"
+                android:layout_column="1"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:src="@drawable/horor5"
+                        android:layout_gravity="center_horizontal" />
+                    <TextView
+                        android:padding="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="The Call"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:layout_gravity="center_horizontal"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:textAlignment="center"
+                        android:padding="3dp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@color/black"
+                        android:textColor="@color/white"
+                        android:text="Crime, Horror, Mystery" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:padding="3dp"
+                        android:textAlignment="center"
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:textSize="10sp"
+                        android:background="@color/gold"
+                        android:textColor="@color/white"
+                        android:text="Tonton" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/enam"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_row="2"
+                android:layout_margin="10dp"
+                android:layout_column="2"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:src="@drawable/horor6"
+                        android:layout_gravity="center_horizontal" />
+                    <TextView
+                        android:padding="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Midnight"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:layout_gravity="center_horizontal"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:textAlignment="center"
+                        android:padding="3dp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@color/black"
+                        android:textColor="@color/white"
+                        android:text="Thriller" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:padding="3dp"
+                        android:textAlignment="center"
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:textSize="10sp"
+                        android:background="@color/gold"
+                        android:textColor="@color/white"
+                        android:text="Tonton" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tujuh"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_row="3"
+                android:layout_margin="10dp"
+                android:layout_column="0"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:src="@drawable/horor7"
+                        android:layout_gravity="center_horizontal" />
+                    <TextView
+                        android:padding="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Extra Curricular"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:layout_gravity="center_horizontal"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:textAlignment="center"
+                        android:padding="3dp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@color/black"
+                        android:textColor="@color/white"
+                        android:text="Thriller" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:padding="3dp"
+                        android:textAlignment="center"
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:textSize="10sp"
+                        android:background="@color/gold"
+                        android:textColor="@color/white"
+                        android:text="Tonton" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/delapan"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_row="3"
+                android:layout_margin="10dp"
+                android:layout_column="1"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:src="@drawable/horor8"
+                        android:layout_gravity="center_horizontal" />
+                    <TextView
+                        android:padding="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sweet Home"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:layout_gravity="center_horizontal"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:textAlignment="center"
+                        android:padding="3dp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@color/black"
+                        android:textColor="@color/white"
+                        android:text="Thriller, Fantasy" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:padding="3dp"
+                        android:textAlignment="center"
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:textSize="10sp"
+                        android:background="@color/gold"
+                        android:textColor="@color/white"
+                        android:text="Tonton" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/sembilan"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_row="3"
+                android:layout_margin="10dp"
+                android:layout_column="2"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:src="@drawable/horor9"
+                        android:layout_gravity="center_horizontal" />
+                    <TextView
+                        android:padding="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Island"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:layout_gravity="center_horizontal"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:textAlignment="center"
+                        android:padding="3dp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@color/black"
+                        android:textColor="@color/white"
+                        android:text="Thriller, Fantasy, Horror" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:padding="3dp"
+                        android:textAlignment="center"
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:textSize="10sp"
+                        android:background="@color/gold"
+                        android:textColor="@color/white"
+                        android:text="Tonton" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/sepuluh"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_row="4"
+                android:layout_margin="10dp"
+                android:layout_column="0"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:src="@drawable/horor10"
+                        android:layout_gravity="center_horizontal" />
+                    <TextView
+                        android:padding="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Happines"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:layout_gravity="center_horizontal"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:textAlignment="center"
+                        android:padding="3dp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@color/black"
+                        android:textColor="@color/white"
+                        android:text="Thriller, Fantasy" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:padding="3dp"
+                        android:textAlignment="center"
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:textSize="10sp"
+                        android:background="@color/gold"
+                        android:textColor="@color/white"
+                        android:text="Tonton" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/sebelas"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_row="4"
+                android:layout_margin="10dp"
+                android:layout_column="1"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:src="@drawable/horor11"
+                        android:layout_gravity="center_horizontal" />
+                    <TextView
+                        android:padding="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="The Witch : Part 1"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:layout_gravity="center_horizontal"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:textAlignment="center"
+                        android:padding="3dp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@color/black"
+                        android:textColor="@color/white"
+                        android:text="Thriller" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:padding="3dp"
+                        android:textAlignment="center"
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:textSize="10sp"
+                        android:background="@color/gold"
+                        android:textColor="@color/white"
+                        android:text="Tonton" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/duabelas"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_row="4"
+                android:layout_margin="10dp"
+                android:layout_column="2"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:src="@drawable/horor12"
+                        android:layout_gravity="center_horizontal" />
+                    <TextView
+                        android:padding="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="#Alive"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:layout_gravity="center_horizontal"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:textAlignment="center"
+                        android:padding="3dp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@color/black"
+                        android:textColor="@color/white"
+                        android:text="Thriller, Zombie" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:padding="3dp"
+                        android:textAlignment="center"
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:textSize="10sp"
+                        android:background="@color/gold"
+                        android:textColor="@color/white"
+                        android:text="Tonton" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+    </ScrollView>
+
+</RelativeLayout>

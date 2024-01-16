@@ -25,7 +25,7 @@ public class Alarm2Activity extends BroadcastReceiver {
             vibrator.vibrate(30000);
 
 
-        Toast.makeText(context, "Bangun, Bangun katanya mau tidur!", Toast.LENGTH_LONG).show();
+        Toast.makeText(context, "Bangun, Bangun katanya mau liat Taehyung!", Toast.LENGTH_LONG).show();
         Uri alarmUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_ALARM);
         if (alarmUri == null) {
             alarmUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);

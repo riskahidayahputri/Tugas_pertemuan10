@@ -10,25 +10,26 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:background="@color/blue"
+        android:background="@color/beige"
         >
+
         <ImageView
             android:id="@+id/imghome"
-            android:layout_width="80dp"
+            android:layout_width="86dp"
             android:layout_height="80dp"
+            android:layout_centerVertical="true"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
-            android:src="@drawable/riskalogo"
-            android:layout_centerVertical="true"
-            />
+            android:src="@drawable/riskalogo" />
+
         <TextView
-            android:layout_margin="20dp"
             android:id="@+id/judul"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/imghome"
-            android:textColor="@color/white"
-            android:text="Selamat Datang Riska"
+            android:layout_margin="20dp"
+            android:text="ANNYEONG YEOREOBUN "
+            android:textColor="@color/black"
             android:textSize="24sp" />
     </LinearLayout>
     <GridLayout
@@ -65,7 +66,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Hello"
+                    android:text="Annyeong"
                     android:textColor="@color/black"
                     android:textSize="14dp"
                     android:layout_marginTop="10dp"
@@ -271,7 +272,38 @@
                     android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
-
+        <androidx.cardview.widget.CardView
+            android:id="@+id/to_movies"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:cardCornerRadius="15dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_row="3"
+            android:layout_margin="10dp"
+            android:layout_column="1"
+            app:cardElevation="12dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/baseline_ondemand_video_24"
+                    android:layout_gravity="center_horizontal" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Movies"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
 
 
     </GridLayout>

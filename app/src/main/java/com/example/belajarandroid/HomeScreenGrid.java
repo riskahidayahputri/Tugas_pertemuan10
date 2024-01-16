@@ -18,6 +18,8 @@ public class HomeScreenGrid extends AppCompatActivity {
     CardView button_twoactivity;
     CardView button_alarm;
     CardView button_maps;
+
+    CardView button_movies;
     Uri geoLocation;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,13 +81,26 @@ public class HomeScreenGrid extends AppCompatActivity {
                 startActivity(intent_alarm);
             }
         });
-
+        button_movies = (CardView) findViewById(R.id.to_movies);
+        button_movies.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent_movie = new Intent(HomeScreenGrid.this, TabsActivity.class);
+                startActivity(intent_movie);
+            }
+        });
         button_maps = (CardView) findViewById(R.id.to_map);
         button_maps.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Intent.ACTION_VIEW);
-                intent.setData(geoLocation);
+                double latitude = 106.992416;
+                double longitude = -6.241586;
+                String label = "Bekasi, Indonesia";
+                String location = "geo:" + latitude + "," + longitude + "?q=" + latitude + "," + longitude + "(" + label + ")";
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(location));
+//                startActivity(intent);
+//                Intent intent = new Intent(Intent.ACTION_M);
+//                intent.setData(geoLocation);
                 if (intent.resolveActivity(getPackageManager()) != null) {
                     startActivity(intent);
                 }
